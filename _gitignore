@@ -1,0 +1,15 @@
+# 秘密情報（APIキーなど）はコードに書かない。アプリの「データ管理」で入力し、端末の中にだけ保存します。
+.env
+.env.*
+!.env.example
+*.local
+secrets.*
+config.local.*
+
+# バックアップCSV・個人データ
+yoyu_aru_*.csv
+
+# その他
+node_modules/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+name = "yoyu-aru-receipt"
+main = "receipt-proxy.js"
+compatibility_date = "2025-01-01"
+
+# 回数制限のカウンター用 KV（作成後に出る id を貼る）
+#   npx wrangler kv namespace create RATE
+[[kv_namespaces]]
+binding = "RATE"
+id = "ここに KV の id"
+
+[vars]
+# アプリを公開している URL の origin（例：https://ユーザー名.github.io）
+ALLOWED_ORIGIN = "https://ユーザー名.github.io"
+# GEMINI_MODEL = "gemini-2.5-flash"
